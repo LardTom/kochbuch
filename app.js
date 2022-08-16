@@ -1,4 +1,4 @@
-function redirekt(id){window.location.href = `/rezept.html?id=${id}`;}
+function redirekt(id){window.location.href = `rezept.html?id=${id}`;}
 
 
 fetch("./rezepte.json")
