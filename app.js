@@ -12,7 +12,6 @@ fetch("./rezepte.json")
     element.forEach(element => {
         let button = document.createElement('div')
         button.setAttribute("onclick", `redirekt(${element.id})`)
-        console.log(element.id)
         button.classList.add("rezept")
 
         let img = document.createElement("img")

@@ -38,8 +38,6 @@ fetch("./rezepte.json")
 
         for (let i = 0; i < amount.length; i++) {
             const element = amount[i];
-            
-            console.log(`${element} of ${type[i]}`);
 
             let ingredientRow = document.createElement("tr")
             let ingredient1 = document.createElement("td")
