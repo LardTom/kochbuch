@@ -1,0 +1,32 @@
+[
+    {
+        "id": "2233",
+        "name": "tets Brot",
+        "img": "./img/tets-brot.jpeg",
+        "tags": ["Brot"],
+        "author": "Tom",
+        "yield": 2,
+        "cookingTime": 45,
+        "kcal": 0,
+        "protein": 0,
+        "fat": 0,
+        "ingredientsAmount": ["500g", "250l", "1El"],
+        "ingredientsType": ["Mehl", "Milch", "Öl"],
+        "step":["step 1", "step 2", "..."]
+    },
+    {
+        "id": "2234",
+        "name": "Nudeln",
+        "img": "./img/nudeln.jpeg",
+        "tags": ["Nudeln"],
+        "author": "Tom",
+        "yield": 2,
+        "cookingTime": 45,
+        "kcal": 100,
+        "protein": 5,
+        "fat": 0,
+        "ingredientsAmount": ["250ml", "1 Prise", "500g"],
+        "ingredientsType": ["Wasser", "Salz", "Nudeln"],
+        "step":["step 1", "step 2", "..."]
+    }
+]

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(44, 40, 50);
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.rezept{
+    width: 20rem;
+    min-height: 25rem;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.rezeptImg{
+    min-width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.details{
+    padding: .5rem 1rem;
+}
+
+.rezeptHeading{
+    font-size: 1.4rem;
+    font-weight: Bold;
+    display: block;
+}
+
+.rezeptYield{
+    display: block;
+    margin-top: .3rem;
+}
+
+.rezeptCookingTime{
+    display: block;
+    margin: .3rem 0 .5rem 0;
+    color: gray;
+}
+
+.rezeptKcal{
+    display: block;
+}
+
+.rezeptKcal::before{
+    content: "kcal: ";
+}
+
+.rezeptProtein{
+    display: block;
+}
+
+.rezeptProtein::before{
+    content: "Protein: ";
+}
+
+.rezeptFat{
+    display: block;
+}
+
+.rezeptFat::before{
+    content: "Fett: ";
+}
+
+@media only screen and (max-width: 950px) {
+    .container{
+        display: block;
+        width: 100%;
+    }
+
+    .rezept{
+        margin: 2rem auto;
+    }
+  }
