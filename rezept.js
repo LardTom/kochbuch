@@ -24,6 +24,8 @@ fetch("./rezepte.json")
         
         if (rezept.id == rezeptID) {
 
+        document.title= rezept.name
+
         name.innerHTML = rezept.name
 
         author.innerHTML = rezept.author
