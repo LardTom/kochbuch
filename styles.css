@@ -21,6 +21,8 @@ body{
     margin: 1rem;
     overflow: hidden;
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 .rezeptImg{

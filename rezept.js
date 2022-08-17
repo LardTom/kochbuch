@@ -7,8 +7,7 @@ fetch("./rezepte.json")
 })
 .then(element => {
 
-    let urlParams = new URLSearchParams(window.location.search);
-    let rezeptID = urlParams.get('id');
+    let rezeptID = sessionStorage.getItem("rezeptID")
 
   
     let name= document.querySelector("#name")

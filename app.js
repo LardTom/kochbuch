@@ -1,4 +1,4 @@
-function redirekt(id){window.location.href = `/Kochbuch/rezept.html?id=${id}`;}
+function redirekt(id){sessionStorage.setItem("rezeptID", id);}
 
 
 fetch("./rezepte.json")
@@ -10,7 +10,8 @@ fetch("./rezepte.json")
     let container=document.querySelector(".container")
 
     element.forEach(element => {
-        let button = document.createElement('div')
+        let button = document.createElement('a')
+        button.setAttribute("href", "./rezept.html")
         button.setAttribute("onclick", `redirekt(${element.id})`)
         button.classList.add("rezept")
 
