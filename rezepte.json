@@ -3,7 +3,7 @@
         "id": "2233",
         "name": "tets Brot",
         "img": "./img/tets-brot.jpeg",
-        "tags": ["Brot"],
+        "tags": ["Brot", "Herzhaft", "Schwer", "2 Personen", "Abendmahlzeit"],
         "author": "Tom",
         "yield": 2,
         "cookingTime": 45,
@@ -15,7 +15,7 @@
         "step":["step 1", "step 2", "..."]
     },
     {
-        "id": "2234",
+        "id": "2235",
         "name": "Nudeln",
         "img": "./img/nudeln.jpeg",
         "tags": ["Nudeln"],
@@ -27,6 +27,6 @@
         "fat": 0,
         "ingredientsAmount": ["250ml", "1 Prise", "500g"],
         "ingredientsType": ["Wasser", "Salz", "Nudeln"],
-        "step":["step 1", "step 2", "..."]
+        "step":["step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step", "step" ]
     }
 ]

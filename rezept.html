@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezept</title>
+    <link rel="stylesheet" href="styles-rezept.css">
 </head>
 <body>
+    
+<div class="div1"><img src="" alt="Bild" id="rezeptHeroimg"></div>
+<div class="div2">
     <div itemtype="http://schema.org/Recipe">
-
         <h1 itemprop="name" id="name">Name</h1>
-        <div itemprop="tagline" id="tags">Tags</div>
+        <ol itemprop="tagline" id="tags"></ol>
         <div><span>Von </span><span itemprop="author" id="author">Autor</span></div>
-        
         <p>
         <div>
         <span>Für: </span><span itemprop="recipeYield" id="yield">2</span>
@@ -23,21 +25,17 @@
         <div itemprop="nutrition" itemtype="https://schema.org/NutritionInformation">
         <span>Nährwerte:  </span>
         <span itemprop="calories" id="kcal">340kcal</span>
+        <span itemprop="proteinContent" id="protein">0g</span>
+        <span itemprop="fatContent" id="fat">0g</span>
         </div>
         </p>
-
-
-        <table id="ingredients">
-        </table>
-
         </div>
-    <script async="async" src="//platform.getbring.com/widgets/import.js"></script>
-<div data-bring-import data-bring-language="de" data-bring-theme="dark" data-bring-base-quantity="1"  style="display:none">
 </div>
-
-<ol id="steps">
-
-</ol>
+<div class="div3"><table id="ingredients">
+</table>   <script async="async" src="//platform.getbring.com/widgets/import.js"></script>
+    <div data-bring-import data-bring-language="de" data-bring-theme="dark" data-bring-base-quantity="1"  style="display:none">
+    </div></div>
+<div class="div4"><ol id="steps"></ol></div>
 <script src="rezepte.json"></script>
 <script src="rezept.js"></script>
 </body>

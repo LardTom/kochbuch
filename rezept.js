@@ -16,8 +16,12 @@ fetch("./rezepte.json")
     let yield= document.querySelector("#yield")
     let prepTime= document.querySelector("#prepTime")
     let kcal= document.querySelector("#kcal")
+    let protein= document.querySelector("#protein")
+    let fat= document.querySelector("#fat")
     let ingredients= document.querySelector("#ingredients")
     let steps= document.querySelector("#steps")
+    let heroImg = document.querySelector("#rezeptHeroimg")
+    
 
     element.forEach(rezept => {
         
@@ -27,10 +31,27 @@ fetch("./rezepte.json")
 
         name.innerHTML = rezept.name
 
+        heroImg.setAttribute("src", rezept.img)
+
         author.innerHTML = rezept.author
         yield.innerHTML = rezept.yield
         prepTime.innerHTML = `${rezept.cookingTime}min`
         kcal.innerHTML = `${rezept.kcal}kcal`
+        protein.innerHTML = `${rezept.protein}g Protein`
+        fat.innerHTML = `${rezept.fat}g Fett`
+
+        kcal.classList.add("nutrition")
+        protein.classList.add("nutrition") 
+        fat.classList.add("nutrition") 
+
+        tags.classList.add("tag-list")
+        for (let j = 0; j < rezept.tags.length; j++) {
+            const item = rezept.tags[j];
+            let tag = document.createElement("li")
+            tag.innerHTML=item
+            tags.appendChild(tag)
+        }
+
 
         let amount = rezept.ingredientsAmount
         let type = rezept.ingredientsType

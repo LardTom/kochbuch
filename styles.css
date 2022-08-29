@@ -76,6 +76,44 @@ body{
     content: "Fett: ";
 }
 
+.nutrition{
+    display: block;
+}
+
+
+.tag-list{
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tag-list::-webkit-scrollbar {
+    display: none;
+  }
+
+.tag-list>*{
+    color: white;
+    padding: 0.3rem;
+    margin: 0.1rem;
+    list-style: none;
+    background-color: #677793;
+    border-radius: 4px;
+    font-size: .8rem;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#tag-search{
+    margin: 1rem 0 0 1rem;
+}
+
+
 @media only screen and (max-width: 950px) {
     .container{
         display: block;
@@ -87,3 +125,4 @@ body{
         display: block;
     }
   }
+
